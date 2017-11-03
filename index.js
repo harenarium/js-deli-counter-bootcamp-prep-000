@@ -22,5 +22,5 @@ function currentLine(){
   }else{
     return "The line is currently empty."
   }
-  
+
 }
