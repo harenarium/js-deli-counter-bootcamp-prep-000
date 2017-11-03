@@ -2,12 +2,14 @@ var katzDeli = [];
 
 function takeANumber(katzDeliLine,name){ //katzDeliLine= current line array?
   katzDeliLine.push("name")
-  return katzDeliLine.length +1
+  var number =katzDeliLine.length +1
+  return `Welcome, ${name}. You are number ${number} in line.`
 }
 
 function nowServing(){
   if(katzDeliLine.length>0){
     return katzDeliLine[0]
+    katzDeliLine.shift(1)
   }else{
     return "There is nobody waiting to be served!"
   }
