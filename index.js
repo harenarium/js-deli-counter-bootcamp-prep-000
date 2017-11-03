@@ -8,10 +8,9 @@ function takeANumber(katzDeliLine,name){ //katzDeliLine= current line array?
 
 function nowServing(katzDeliLine){
   if(katzDeliLine.length>0){
-    var katzDeliCopy = katzDeliLine
+    var katzDeliCopy = katzDeliLine.slice(0)
     katzDeliLine.shift(1)
-    //return `Currently serving ${katzDeliCopy[0]}.`
-    return katzDeliCopy
+    return `Currently serving ${katzDeliCopy[0]}.`
   }else{
     return "There is nobody waiting to be served!"
   }
